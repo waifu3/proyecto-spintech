@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --background-color: #f0f3f6;
+  --text-color: #333;
+  --card-background: #fff;
+  --hover-color: #2980b9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--primary-color);
+  color: #fff;
+  padding: 8px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Header and Navigation Styles */
+header {
+  background-color: var(--card-background);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem 0;
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  color: var(--text-color);
+  transition: background-color 0.3s ease;
+  margin-right: 1rem;
+}
+
+.back-button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.back-button i {
+  width: 24px;
+  height: 24px;
+}
+
+.logo-link {
+  text-decoration: none;
+  margin-right: auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--primary-color);
+}
+
+.accessibility-bar {
+  background-color: #f8f9fa;
+  padding: 0.5rem 0;
+  border-top: 1px solid #e9ecef;
+}
+
+.accessibility-controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.accessibility-controls button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: background-color 0.3s ease;
+}
+
+.accessibility-controls button:hover {
+  background-color: var(--hover-color);
+}
+
+/* Course Header Styles */
+.course-header {
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  color: #fff;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.course-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.course-brief {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto 1rem;
+}
+
+.course-category {
+  font-size: 1rem;
+}
+
+/* Course Content Styles */
+.course-content {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.course-details {
+  flex: 2;
+  background-color: var(--card-background);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.course-details h2 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.course-sidebar {
+  flex: 1;
+  background-color: var(--card-background);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.course-image {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.btn-start-course {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: #fff;
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.btn-start-course:hover {
+  background-color: var(--hover-color);
+}
+
+/* Footer Styles */
+footer {
+  background-color: var(--card-background);
+  color: var(--text-color);
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+/* High Contrast Mode */
+.high-contrast {
+  --primary-color: #ffff00;
+  --secondary-color: #00ff00;
+  --background-color: #000000;
+  --text-color: #ffffff;
+  --card-background: #333333;
+  --hover-color: #0000ff;
+}
+
+.high-contrast .back-button {
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+}
+
+.high-contrast .back-button:hover {
+  background-color: var(--text-color);
+  color: var(--background-color);
+}
+
+/* Large Text Mode */
+.large-text {
+  font-size: 18px;
+}
+
+.large-text .course-header h1 {
+  font-size: 3rem;
+}
+
+.large-text .course-brief {
+  font-size: 1.3rem;
+}
+
+.large-text .course-details h2,
+.large-text .course-sidebar h2 {
+  font-size: 2rem;
+}
+
+.large-text .btn-start-course {
+  font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .header-content {
+    flex-wrap: wrap;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+
+  .course-content {
+    flex-direction: column;
+  }
+
+  .course-sidebar {
+    order: -1;
+  }
+
+  .accessibility-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .accessibility-controls button {
+    width: 100%;
+  }
+}
+
+/* Focus styles for keyboard navigation */
+a:focus,
+button:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}

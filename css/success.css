@@ -1,0 +1,32 @@
+body {
+    text-align: center;
+    background-color: #1fdc22;
+    background-image: url(./images/UltraVoilet.jpg);
+}
+
+.fa-circle-check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 8em;
+    margin-top: 15%;
+}
+
+p {
+    color: #fff;
+    font-size: 2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+span {
+    color: #fff;
+    cursor: pointer;
+}
+
+span:hover {
+    color: #ccc;
+}

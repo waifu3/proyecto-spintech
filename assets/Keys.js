@@ -1,0 +1,4 @@
+export default {
+    public: "pk_test_51NBI1ALPjEA0YpbjygrTs1ZdLnvRSo6vsAqpxkAiIiZYsN3aTJYKrC1e5k2KYn0fVJ6KTRSyBfzrz5FiLcBKqrbC00QCjjiMqK",
+    secret: "sk_test_51NBI1ALPjEA0Ypbjz1u7P39kMuznVH810OodzSQ53PbUIGT3y1wKKL11u2MFZRJaJAg5suz5zO7nJi2e3Aaac5aJ00zIKQ0Osk"
+}
